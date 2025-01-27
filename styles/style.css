@@ -1,5 +1,138 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  min-width: 375px;
+  color: var(--text-color);
+  font-family: var(--main-font, "IBM Plex mono"), Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  background-color: var(--bg-color);
+}
+
+.header,
+.footer {
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .header,
+  .footer {
+    padding: 20px;
+  }
+}
+
+.header {
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.frame {
+  width: 25px;
+  height: 25px;
+  border: solid var(--decor-color);
+}
+
+.frame_border-start {
+  position: relative;
+  float: right;
+  border-width: 1px 1px 0 0;
+}
+
+.header__theme-menu {
+  margin-block-start: calc(25px + 40px);
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .header__theme-menu {
+    margin-block-start: calc(25px + 147px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__theme-menu {
+    margin-inline-end: calc(397px - 20px);
+    margin-block-start: 0;
+  }
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+@media (min-width: 1024px) {
+  .header__theme-menu-list {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.header__theme-menu-item {
+  width: 70px;
+  height: 26px;
+}
+
+.header__theme-menu-button {
+  width: 100%;
+  border: none;
+  color: var(--decor-color);
+  text-transform: lowercase;
+  background-color: transparent;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--decor-color);
+  pointer-events: none;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.4);
+}
+
+.header__theme-menu-button:focus {
+  border: none;
+  border-block-end: 1px solid var(--decor-color);
+}
+
+.frame_border-start::before {
+  content: 'REC';
+  position: absolute;
+  left: -58px;
+  color: var(--decor-color);
+  line-height: 25px;
+}
+
+.frame_border-start::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 9px;
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--decor-color);
+  background-color: var(--decor-color);
+}
+
+.frame_border-end {
+  border-width: 0 0 1px 1px;
+}
+
+.main {
+  margin: 40px 0;
+  padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    margin: 60px 0;
+    padding: 0 20px;
+  }
 }

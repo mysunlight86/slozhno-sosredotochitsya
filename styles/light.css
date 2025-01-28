@@ -11,6 +11,7 @@
     --accent-color: #ff8dcb;
     --bg-image: url(../images/cover-image-light.png);
     --decor-color: var(--text-color);
+    --heading-color: #ffc2ef;
   }
 
   .camera-light__text {
@@ -38,6 +39,7 @@
   --accent-color: #ff8dcb;
   --bg-image: url(../images/cover-image-light.png);
   --decor-color: var(--text-color);
+  --heading-color: #ffc2ef;
 
   .frame_border-start::before, .frame_border-start::after {
     display: none;

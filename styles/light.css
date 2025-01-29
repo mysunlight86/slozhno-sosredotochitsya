@@ -8,6 +8,7 @@
   :root {
     --bg-color: #fff1f7;
     --text-color: #353430;
+    --accent-text: #353430;
     --accent-color: #ff8dcb;
     --bg-image: url(../images/cover-image-light.png);
     --decor-color: var(--text-color);
@@ -36,6 +37,7 @@
 
   --bg-color: #fff1f7;
   --text-color: #353430;
+  --accent-text: #353430;
   --accent-color: #ff8dcb;
   --bg-image: url(../images/cover-image-light.png);
   --decor-color: var(--text-color);

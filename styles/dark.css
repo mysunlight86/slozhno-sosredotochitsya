@@ -19,6 +19,10 @@
   .header__theme-menu-button:hover {
     border: 1px solid rgba(255, 0, 112, 0.4);
   }
+
+  .content__title {
+    color: var(--accent-color);
+  }
 }
 
 .page.theme_dark {
@@ -38,5 +42,9 @@
 
   .header__theme-menu-button:hover {
     border: 1px solid rgba(255, 0, 112, 0.4);
+  }
+
+  .content__title {
+    color: var(--accent-color);
   }
 }

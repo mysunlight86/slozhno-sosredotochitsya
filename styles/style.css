@@ -197,6 +197,20 @@
   }
 }
 
+@media (min-width: 768px) {
+  .concentrate {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+
+  .concentrate ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
 .content__title {
   color: var(--accent-color);
   font-size: 18px;
@@ -206,6 +220,13 @@
   margin-block-start: 20px;
   margin-block-end: 10px;
   font-size: 18px;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .concentrate .content__heading:first-of-type {
+    margin-block-start: 0;
+  }
 }
 
 .content__link {
